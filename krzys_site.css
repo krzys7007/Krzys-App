@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo_png{
+    height: fit-content;
+    cursor: pointer;
+    max-width: 7.5%;
+}
+
+.logo{
+    height: fit-content;
+    font-size: 3dvh;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.guest_chat{
+    margin-left: 1%;
+    width: 5%;
+    display: inline-block;
+}
+
+.banner{
+    width: 100%;
+    height: 12.5%;
+    background-color: #59eeff;
+    position: relative;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.my_photo{
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+.my_photo_png{
+    height: 20%;
+}
+
+.download_symbol{
+    width: 20px;
+}
+
+.content{
+    height: 100%;
+}
