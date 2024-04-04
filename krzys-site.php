@@ -1,3 +1,6 @@
+<?php
+    include_once 'Includes/mysql_connection.php';
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -79,7 +82,7 @@
                             <ul class="list-unstyled">
                                 <li> <div class="p-4 px-4 m-3 me-5 ms-5 rounded-5 border border-5 bg-dark"> <div class="style_list"> <a href="#skills"> Skills </a> </div></div></li>
                                 <li> <div class="p-4 px-4 m-3 me-5 ms-5 rounded-5 border border-5 bg-dark"> <div class="style_list"> <a href="krzys_site_experience.php"> Experience </a> </div> </div></li>
-                                <li> <div class="p-3 px-4 m-3 me-5 ms-5 rounded-5 border border-5 bg-dark"> <div class="style_list"> CV &nbsp;&nbsp; <a href="cv.pdf" download="CV_Krzysztof_Nowakowski.pdf"> <button class="btn btn-outline-secondary btn-lg"><img src="Assets/download_symbol.png" class = "download_symbol"> </button> </a> </div> </div></li>
+                                <li> <div class="p-3 px-4 m-3 me-5 ms-5 rounded-5 border border-5 bg-dark"> <div class="style_list"> CV &nbsp;&nbsp; <a href="CV_Krzysztof_Nowakowski.pdf" download="CV_Krzysztof_Nowakowski.pdf"> <button class="btn btn-outline-secondary btn-lg"><img src="Assets/download_symbol.png" class = "download_symbol"> </button> </a> </div> </div></li>
                                 <li> 
                                     <div class="p-2 px-3 m-2 me-5 ms-5 rounded-5 border border-5 bg-dark">
                                         <div class="accordion" id="interests_acc">
