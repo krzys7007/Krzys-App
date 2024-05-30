@@ -1,0 +1,283 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo_png{
+    height: fit-content;
+    cursor: pointer;
+    max-height: 10dvh;
+    background-color: #00DA38;
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+}
+a:active { 
+    text-decoration: none; 
+}
+a{
+    color: inherit;
+}
+
+.logo{
+    background-color: #00DA38;
+    width: fit-content;
+    min-width: 20dvh;
+    max-width: 60dvh;
+    height: fit-content;
+    font-size: 3dvh;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    color: black;
+}
+
+.guest_chat{
+    margin-left: 1%;
+    width: 5%;
+    display: inline-block;
+    background-color: #00DA38;
+}
+
+.banner{
+    width: 100%;
+    height: 12.5%;
+    position: relative;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.navbar{
+    background-color: #00DA38;
+}
+
+.my_photo{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.my_photo_text{
+    font-weight: bolder;
+    font-size: 4.5rem;
+    line-height: 1.2;
+}
+
+.my_photo_png{
+    height: 20%;
+}
+
+.download_symbol{
+    width: 20px;
+    filter: invert(100);
+}
+
+.guest_list{
+    height: 45dvh;
+    margin-top: 1dvh;
+    margin-left: 1dvw;
+}
+
+.quick_chat{
+    height: 45dvh;
+}
+
+.guest_panel{
+    margin-left: 1dvh;
+    text-align: center;
+}
+
+
+.offcanvas_content{
+    height: 92dvh;
+    margin-top: 1dvh;
+    margin-left: 1dvh;
+}
+
+.offcanvas_header{
+    background-color: #00DA38;
+    text-align: center;
+    height: 5dvh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.guest_title{
+    text-align: center;
+    margin-left: 15%;
+    font-size: 2.5vh;
+}
+
+.close{
+    margin-right: 1dvw;
+    text-align: right;
+}
+
+.d-flex.bd-highlight{
+    width:100%;
+    margin-top: 0.5dvh;
+    color: black;
+}
+
+.background{
+    background-color: #171717;
+    color: white;
+    height: 200dvh;
+}
+
+.background_experience{
+    background-color: #171717;
+    color: white;
+    height: 100%;
+}
+
+.offcanvas_background{
+    background-color: #171717;
+    color: white;
+    height: 100%;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #212529;
+    color:white;
+    box-shadow: none;
+}
+
+.accordion-button{
+    background-color: #212529;
+    color:white;
+}
+
+.accordion-item{
+    border-width: 0px;
+}
+
+.int_text{
+    padding: 5px;
+    background-color: #212529;
+    color: white;
+}
+
+.about_me_title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.accordion-button::after{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.style_list{
+    padding-left: 0.75rem;
+}
+
+.skills_title{
+    text-align: center;
+}
+
+.experience_text{
+    text-align: justify;
+}
+
+.list_proper{
+    border-radius: 2dvi;
+    margin-left: 0px;
+    margin-right: 1.5dvw;
+    padding-top: 1dvh;
+    height: 90%;
+    background-color: #212529;
+    overflow: auto;
+}
+
+body{
+    background-color: #171717;
+}
+
+.chat_vert{
+    margin-top: 1dvh;
+}
+
+.logo_login{
+    background-color: #00DA38;
+    width: fit-content;
+    min-width: 20dvh;
+    max-width: 60dvh;
+    height: fit-content;
+    font-size: 3dvh;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    color: black;
+    margin-left: 1dvw;
+}
+
+.chat_proper{
+    border-radius: 1dvi;
+    margin-left: 1dvw;
+    margin-right: 1.5dvw;
+    padding-top: 1dvh;
+    background-color: #212529;
+    overflow: auto;
+    margin-top: 2dvh;
+    margin-bottom: 2dvh;
+    height: 36dvh;
+}
+
+.chat_messages{
+    height: 28dvh;
+}
+
+.form_col{
+    margin-top: 0px;
+}
+
+hr{
+    margin: 1dvh;
+}
+
+.form-control{
+    background-color: #212529;
+    color: white;
+}
+
+input:not(:placeholder-shown) {
+    background-color:  #212529!important;
+    color:white!important;
+ }
+ 
+ input:placeholder-shown {
+    background-color:  #212529!important;
+    color:white!important;
+ }
+
+ .send_image{
+    filter: invert(100%);
+ }
+
+ .no_margin{
+    margin: 0px;
+ }
+
+ .size_of_row{
+    width: 100%;
+ }
+
+ .padding_format{
+    padding-right: 0px;
+ }
+
+ .input_field>input.someInput {flex: 0 1 100px;}
