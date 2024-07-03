@@ -1,0 +1,50 @@
+services:
+  #nginx
+  web:
+    #image: mydemophpimage
+    build:
+      dockerfile: ./PHP/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      #- ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./PHP/Krzys-App:/var/www/html/Krzys-App
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: KrzysiuApp
+    networks:
+      - bridge_net
+      - ipvlan_net
+        #ipv4_address: 192.168.1.11
+  #php
+
+  #mysql
+  db:
+    image: mysql:latest
+    volumes:
+      - mysqldata:/var/lib/mysql
+      - ./mysql/database_krzys_app.sql:/var/database_krzys_app.sql
+    ports:
+      - "4306:3306"
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: KrzysiuApp
+    networks:
+#      - bridge_net
+      ipvlan_net:
+        ipv4_address: 192.168.1.30
+
+volumes:
+  mysqldata: #./mysql/database_krzys_app.sql
+
+networks:
+  ipvlan_net:
+    external: true
+    name: ipvlan_net
+  bridge_net:
+    driver: bridge

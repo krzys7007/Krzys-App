@@ -1,0 +1,1 @@
+<a href="logout_inc.php" class="btn btn-secondary" role="button">Log out</a>
