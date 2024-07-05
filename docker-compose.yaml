@@ -38,10 +38,17 @@ services:
 #      - bridge_net
       ipvlan_net:
         ipv4_address: 192.168.1.30
+  jenkinks:
+    image: jenkins/jenkins:lts
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    ports:
+      - "8080:8080"
+      - "50000:50000"
 
 volumes:
   mysqldata: #./mysql/database_krzys_app.sql
-
+  jenkins_home:
 networks:
   ipvlan_net:
     external: true
